@@ -1,0 +1,168 @@
+*{margin: 3px; border: 1px dotted blue;} 
+
+body {
+    background-color: aqua;
+
+}
+
+@media (max-width: 575px){
+    body{
+        background-color: yellow;
+        overflow-block: auto;
+    }
+
+    .navbar,
+    .actions {
+      display: none;
+    }
+
+    main {
+      margin-top: 130px;
+    }
+
+    h1 {
+      font-size: 30px;
+
+  }
+
+    .capterra {
+      max-width: 100%;
+      height: auto;
+
+  } 
+
+
+    .publish {
+      margin-top: 10px;
+
+    } 
+
+    .publish > h3 {
+      font-size: 25px;
+      line-height: 1.2;
+    }
+
+
+    .publish > features {
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+
+    }
+
+
+    .publish > features > div {
+      height: 50px;
+      margin-top: 10px;
+    }
+
+    .promo {
+      flex-direction: column;
+      max-width: 90%;
+    }
+
+
+    .explanatory-video {
+      display: inline-block;
+      height: 50px;
+      margin-top: 10px;
+      justify-content: center;
+
+    }
+
+    .publish > form {
+      flex-direction: column;
+    }
+  
+    .publish > form > div {
+      height: 50px;
+      margin-top: 10px;
+    }
+  
+    .publish > form > div > input {
+      width: 65%;
+    }
+
+    .features {
+      background-color: #025157;
+      padding: 0 0; 
+      display: grid; 
+      grid-template: repeat(4, 1fr) / 1fr;
+      align-items: center;
+      text-align: center;
+    }
+
+
+    .features > .feature-card {
+      margin-bottom: 30px;
+      margin-left: 15px;
+      margin-right: 15px;
+      background-color: #fff;
+      border: 1px solid #DADADA;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+
+    }
+
+
+    .features .feature-card .feature-content {
+      padding: 30px 20px 40px 40px;
+      flex: 2;
+    }
+
+
+    .features .feature-card .feature-content > * {
+      margin-bottom: 1rem;
+      margin-top: 0;
+    }
+
+
+    .features .feature-card .feature-content img {
+      max-width: 100%;
+
+    } 
+
+
+    .features .feature-card .feature-content h3 {
+      font-size: 24px;
+      color: #343434;
+      font-weight: 400;
+    }
+
+
+    .features .feature-card .feature-content p {
+      font-size: 16px;
+      color: #7E7E7E;
+      font-weight: 400;
+
+    }
+
+
+    .features .feature-card .feature-content a {
+      font-size: 16px;
+      color: #67B54B;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+
+    .features .feature-card .feature-image {
+      display: none;
+      max-width: 100%;
+      position: relative; 
+      right: -50px;
+      height: auto;
+    }
+
+
+    .features .feature-card .feature-image figure,
+    .features .feature-card .feature-image img {
+      margin-top: 0;
+      height: 100%;
+
+    }
+    
+} 
